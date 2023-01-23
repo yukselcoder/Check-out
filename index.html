@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <section class="form-container">
+        <form action="#">
+          <h3>Contact Information</h3>
+          <label for="email">Email</label>
+          <input
+            class="fontAwesome"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="&#xf0e0; Enter your email..."
+            required
+          />
+          <label for="phone">Phone</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="&#xf095; Enter your phone..."
+          />
+          <h3 class="adress-header">Shipping Adress</h3>
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="&#xf007; Enter your fullname..."
+          />
+          <label for="adress">Adress</label>
+          <input
+            type="text"
+            name="adress"
+            id="adress"
+            placeholder="&#xe3af; Enter your adress..."
+          />
+          <label for="city">City</label>
+          <input
+            type="text"
+            name="city"
+            id="city"
+            placeholder="&#xf64f; Enter your city..."
+          />
+          <div class="country">
+            <div>
+              <label for="country">Country</label>
+              <select name="country" id="country">
+                <option value="turkey">&#xf7a2; Turkey</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+                <option value="deutschland">Deutschland</option>
+              </select>
+            </div>
+            <div>
+              <label for="post">Post Code</label>
+              <input
+                type="number"
+                name="post"
+                id="post"
+                placeholder="&#xf674;Enter your postal code..."
+              />
+            </div>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" name="information" id="information" />
+            <label for="information">See this information next time</label>
+          </div>
+          <section class="submit-container">
+            <button type="submit">Continue</button>
+          </section>
+        </form>
+      </section>
+      <main class="product-container">
+        <section class="item">
+          <div class="image">
+            <img src="photo1.png" alt="" />
+          </div>
+          <div class="product-information">
+            <h4>Vintage Backbag</h4>
+            <p>
+              <span id="discount-price">$154.99</span>
+              <span id="old-price">$224.99</span>
+            </p>
+            <div class="amount">
+              <i class="fas fa-duotone fa-square-minus"></i>
+              <span id="quantity">0</span>
+              <i class="fas fa-duotone fa-square-plus"></i>
+            </div>
+            <div class="button-remove"><button id="btn-remove">Remove</button></div>
+            <p>
+              Product Total: <span>$</span> <span id="product-total">0</span>
+            </p>
+          </div>
+        </section>
+        <section class="item">
+          <div class="image">
+            <img src="photo2.png" alt="" />
+          </div>
+          <div class="product-information">
+            <h4>Levi Shoes</h4>
+            <p>
+              <span id="discount-price">$114.99</span>
+              <span id="old-price">$194.99</span>
+            </p>
+            <div class="amount">
+              <i class="fas fa-duotone fa-square-minus"></i>
+              <span id="quantity">0</span>
+              <i class="fas fa-duotone fa-square-plus"></i>
+            </div>
+            <div class="button-remove"><button id="btn-remove">Remove</button></div>
+            <p>
+              Product Total: <span>$</span> <span id="product-total">0</span>
+            </p>
+          </div>
+        </section>
+        <section class="item">
+          <div class="image">
+            <img src="photo3.jpg" alt="" />
+          </div>
+          <div class="product-information">
+            <h4>Victoria Clock</h4>
+            <p>
+              <span id="discount-price">$54.99</span>
+              <span id="old-price">$94.99</span>
+            </p>
+            <div class="amount">
+              <i class="fas fa-duotone fa-square-minus"></i>
+              <span id="quantity">0</span>
+              <i class="fas fa-duotone fa-square-plus"></i>
+            </div>
+            <div class="button-remove"><button id="btn-remove" >Remove</button></div>
+            <p>
+              Product Total: <span>$</span> <span id="product-total">0</span>
+            </p>
+          </div>
+        </section>
+        <section class="shipment-total">
+          <div class="subtotal">
+            <span>Subtotal</span>
+            <span id="subtotal-price"><span>$</span>0</span>
+          </div>
+          <div class="tax">
+            <span>Tax(18%)</span>
+            <span id="tax-price"><span>$</span>0</span>
+          </div>
+          <div class="shipping">
+            <span>Shipping</span>
+            <span id="shipment"><span>$</span>0</span>
+          </div>
+          <div class="total">
+            <span>Total</span>
+            <span id="total-price"><span>$</span>0</span>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
